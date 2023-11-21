@@ -5,15 +5,16 @@
 function add (number1, number2) {
     return number1 + number2 ;
 }
-let addNumbers = function (add1, add2) {
+let addNumbers = function (addNumber1, addNumber2) {
     addNumber1 = Number(document.querySelector("#ad1").value);
     addNumber2 = Number(document.querySelector("#ad2").value);
 
     document.querySelector("sum").value = add(addNumber1, addNumber2);
 
-    document.querySelector("#addNumbers").addEventListener("click",addNumbers);
+    document.querySelector("#addNumbers").addEventListener("click", addNumbers);
 }
- 
+
+
 /* Function Expression - Subtract Numbers */
 
 
