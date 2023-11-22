@@ -36,9 +36,17 @@ document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNum
 
 
 /* Open Function Use - Divide Numbers */
+const divideNumbers = function (dividend, divisor){
+    let dividend = Number(document.querySelector("#dividend").value);
+    let divisor = Number(document.querySelector("#divisor").value);
+
+document.querySelector("#quotient").value = divide(dividend,divisor);
+}
+document.querySelector("#divideNumbers").addEventListener("click", divideNumbers);
 
 
 /* Decision Structure */
+document.querySelector("#getTotal").addEventListener("click",getTotal);
 
 
 /* ARRAY METHODS - Functional Programming */
