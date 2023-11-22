@@ -26,6 +26,14 @@ document.querySelector("#subtractNumbers").addEventListener("click", subtractNum
 
 /* Arrow Function - Multiply Numbers */
 
+(factor1, factor2) => {
+    let factor1 = Number(document.querySelector('#factor1').value);
+    let factor2 = Number(document.querySelector('#factor2').value);
+
+    document.querySelector('#product').value = multiply(factor1, factor2);
+}
+document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers)
+
 
 /* Open Function Use - Divide Numbers */
 
