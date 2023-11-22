@@ -48,6 +48,21 @@ document.querySelector("#divideNumbers").addEventListener("click", divideNumbers
 /* Decision Structure */
 document.querySelector("#getTotal").addEventListener("click",getTotal);
 
+let calculateTotal() {
+    let subtotalImput = document.querySelector("#subtotal");
+    let subtotal = parseFloat(subtotalImput);
+    let member= Number(document.querySelector('#member').value);
+
+    if (member == true) {
+        let discountedTotal = subtotal -(subtotal * .15);
+    } else {
+        discounted = subtotal;
+    }
+    const totalSpam = document.getElementById("total");
+    totalSpam.textContent = `${discountedTotal.toFixed(2)}`;
+
+}
+
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
