@@ -5,17 +5,20 @@
 function add (number1, number2){
 return number1 + number2;
 }
-function addNumbers (addNumber1, addNumber2){
+function addNumbers (){
 let addNumber1 = Number(document.querySelector("#add1").value);
 let addNumber2 = Number(document.querySelector("#add2").value);
 
 document.querySelector("#sum").value = add(addNumber1, addNumber2);
 }
-document.querySelector('#adNumbers').addEventListener("click", addNumbers);
+document.querySelector('#addNumbers').addEventListener("click", addNumbers);
 
 
 /* Function Expression - Subtract Numbers */
-const subtractNumbers = function (subtract1, subtract2){
+function subtract (subtract1, subtract2) {
+    return subtract1 - subtract2;
+}
+const subtractNumbers = function (){
     let subtract1 = Number(document.querySelector("#subtract1").value);
     let subtract2 = Number(document.querySelector("#subtract2").value);
 
@@ -25,18 +28,23 @@ document.querySelector("#subtractNumbers").addEventListener("click", subtractNum
 
 
 /* Arrow Function - Multiply Numbers */
-
-(factor1, factor2) => {
+function mutltiply (factor1, factor2){
+    return factor1 * factor2 ;
+}
+const multiplyNumbers = () => {
     let factor1 = Number(document.querySelector('#factor1').value);
     let factor2 = Number(document.querySelector('#factor2').value);
 
-    document.querySelector('#product').value = multiply(factor1, factor2);
+    document.querySelector("#product").value = multiply(factor1, factor2);
 }
 document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers)
 
 
 /* Open Function Use - Divide Numbers */
-const divideNumbers = function (dividend, divisor){
+function divide (dividend, divisor){
+    return dividend/divisor;
+}
+const divideNumbers = function (){
     let dividend = Number(document.querySelector("#dividend").value);
     let divisor = Number(document.querySelector("#divisor").value);
 
@@ -69,6 +77,7 @@ let calculateTotal() {
 let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
 /* Output Odds Only Array */
+
 
 /* Output Evens Only Array */
 
