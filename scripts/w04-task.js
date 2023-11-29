@@ -50,7 +50,7 @@ myProfile.placesLived.push(
 /* Name */
 document.querySelector("#name").textContent = myProfile.name;
 /* Photo with attributes */
-document.getElementById("photo").src="cse121b/images/profile.jpg";
+document.getElementById("photo").src="images/profile.jpg";
 document.getElementById("photo").alt="Rebeca Murcia";
 
 /* Favorite Foods List*/
