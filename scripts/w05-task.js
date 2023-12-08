@@ -8,23 +8,23 @@ const url = "https://byui-cse.github.io/cse121b-ww-course/resources/temples.json
 /* async displayTemples Function */
 const displayTemples = (data) => {
 data.forEach((temple) => {
-    let article = document.createElement("article");
-    let h3 = document.createElement("h3");
-    let img = document.createElement("img");
-    h3.textContent = temple.templeName;
-    img.setAttribute("src", temple.imageUrl);
-    img.setAttribute("alt", temple.imageUrl);
+    let articleEl = document.createElement("article");
+    let h3El = document.createElement("h3");
+    let imgEl = document.createElement("img");
+    h3El.textContent = temple.templeName;
+    imgEl.setAttribute("src", temple.imageUrl);
+    imgEl.setAttribute("alt", temple.imageUrl);
     
-    article.appendChild(h3);
-    article.appendChild(img);
-    templesElement.appendChild (article);
+    article.appendChild(h3El);
+    article.appendChild(imgEl);
+    templesElement.appendChild (articleEl);
 })
 }
 /* async getTemples Function using fetch()*/
 const getTemples = async (url) =>{
     const response = await fetch(url);
     if (response.ok) {
-        templeList = await response(json);
+        templeList = await response.json();
         displayTemples(templeList);
     }
 }
