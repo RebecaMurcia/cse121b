@@ -15,8 +15,8 @@ data.forEach((temple)=>{
     imgEl.setAttribute("src", temple.imageUrl);
     imgEl.setAttribute("alt", temple.imageUrl);
     
-    article.appendChild(h3El);
-    article.appendChild(imgEl);
+    articleEl.appendChild(h3El);
+    articleEl.appendChild(imgEl);
     templesElement.appendChild (articleEl);
 })
 }
