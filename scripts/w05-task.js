@@ -37,7 +37,7 @@ const reset = ()=>{
 /* sortBy Function */
 const sortBy = (temples) =>{
     reset();
-    const filter = document.querySelector("#sotrBy").value;
+    const filter = document.querySelector("#sortBy").value;
     let templeFilteredList;
     switch (filter) {
         case "utah":
