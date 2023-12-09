@@ -6,11 +6,11 @@ let templeList = [];
 const url = "https://byui-cse.github.io/cse121b-ww-course/resources/temples.json";
 
 /* async displayTemples Function */
-const displayTemples = (data) => {
-data.forEach((temple) => {
-    let articleEl = document.createElement("article");
-    let h3El = document.createElement("h3");
-    let imgEl = document.createElement("img");
+const displayTemples = (data)=>{
+data.forEach((temple)=>{
+    const articleEl = document.createElement("article");
+    const h3El = document.createElement("h3");
+    const imgEl = document.createElement("img");
     h3El.textContent = temple.templeName;
     imgEl.setAttribute("src", temple.imageUrl);
     imgEl.setAttribute("alt", temple.imageUrl);
@@ -21,7 +21,7 @@ data.forEach((temple) => {
 })
 }
 /* async getTemples Function using fetch()*/
-const getTemples = async (url) =>{
+const getTemples = async (url)=>{
     const response = await fetch(url);
     if (response.ok) {
         templeList = await response.json();
@@ -68,7 +68,7 @@ const sortBy = (temples) =>{
     }
     displayTemples(templeFilteredList);
 }
-getTemples();
+getTemples(url);
 
 /* Event Listener */
 document.querySelector("#sortBy").addEventListener("change", ()=>{sortBy (templeList)});
