@@ -1,7 +1,7 @@
 /* W05: Programming Tasks */
 
 /* Declare and initialize global variables */
-const templesElement = documet.querySelector("#temples");
+const templesElement = document.querySelector("#temples");
 let templeList = [];
 const url = "https://byui-cse.github.io/cse121b-ww-course/resources/temples.json";
 
